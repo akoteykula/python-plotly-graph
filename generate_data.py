@@ -34,7 +34,7 @@ class DataGenerator:
         # Load existing data from the JSON file
         try:
             with open('fake_users.json', 'r') as f:
-                user_data = json.load(f)
+                self.user_data = json.load(f)
         except FileNotFoundError:
             pass
 
