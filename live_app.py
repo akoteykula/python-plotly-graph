@@ -47,7 +47,7 @@ app.layout = html.Div([
 
 
 @app.callback(Output('live-histogram', 'figure'), Input('interval-component', 'n_intervals'))
-def update_histogram():
+def update_histogram(n):  # pylint: disable=unused-argument
     """
     Update the histogram based on the current data in the JSON file.
     """
@@ -60,7 +60,7 @@ def update_histogram():
 
 
 @app.callback(Output('live-scatter-plot', 'figure'), Input('interval-component', 'n_intervals'))
-def update_scatter_plot():
+def update_scatter_plot(n):  # pylint: disable=unused-argument
     """
     Update the scatter plot based on the current data in the JSON file.
     """
