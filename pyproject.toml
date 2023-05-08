@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pythonproject4"
+version = "0.1.0"
+description = ""
+authors = ["amalkhamidov <akoteykula@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+faker = "^18.7.0"
+plotly = "^5.14.1"
+pandas = "^2.0.1"
+dash = "^2.9.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
