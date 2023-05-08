@@ -28,6 +28,7 @@ def generate_person() -> dict:
     }
     return user
 
+
 @dataclass
 class DataGenerator:
     """A class to generate and save fake user data."""
@@ -51,6 +52,7 @@ class DataGenerator:
             json.dump(self.user_data, file)
 
         print("Fake data generated and added to fake_users.json")
+
 
 while True:
     dg = DataGenerator()
